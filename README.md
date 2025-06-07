@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BCR BOT Robot adapted with 3d LiDAR and RGB camera
 
 
@@ -25,6 +26,8 @@ To launch the robot in gz,
 ros2 launch bcr_bot gz.launch.py
 ```
 
+
+=======
 
 
 
