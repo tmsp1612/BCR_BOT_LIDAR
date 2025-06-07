@@ -15,7 +15,7 @@ This version only supports the simulation mode on Gazebo (gz) Fortress. So make 
 ## Dependencies
 
 First is need to download the repo related to the meshes of 3D LiDAR (Velodyne)
-The meshes can be found on this repo adapted to some ROS2 Humble troubles: hee
+The meshes can be found on this repo adapted to some ROS2 Humble troubles: [hee](https://github.com/tmsp1612/Velodyne_Simulator_Humble)
 
 
 
