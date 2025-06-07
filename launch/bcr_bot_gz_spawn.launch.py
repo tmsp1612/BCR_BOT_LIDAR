@@ -139,14 +139,6 @@ def generate_launch_description():
 #                  "--frame-id", "velodyne",
 #                  "--child-frame-id", "bcr_bot/base_footprint/scan_3d"]
 # )
-    robot_localization_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_node',
-        output='screen',
-        parameters=[os.path.join('/home/tmsp/ros2_ws/src/bcr_bot', 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
-    )
-
     static_tranform_base_link_to_base_footprint= Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -199,4 +191,4 @@ def generate_launch_description():
         robot_state_publisher,
         gz_spawn_entity, transform_publisher,gz_ros2_bridge,static_tranform_base_link_to_base_footprint,
         static_tranform_base_link_to_imu_frame,static_tranform_imu_frame_to_velodyne,
-         static_tranform_map_to_odom, static_tranform_odom_to_base_link,robot_localization_node ])
+         static_tranform_map_to_odom, static_tranform_odom_to_base_link ])
